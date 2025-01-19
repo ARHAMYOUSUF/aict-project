@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Artisan Bakehouse - Gallery/Products</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+		#im:hover{
+border-radius:20px;
+box-shadow:0px 0px 10px 3px grey;
+border:2px solid white;
+transform:scale(1);
+}
+img:hover{
+border-radius:20px;
+box-shadow:0px 0px 10px 5px #606060;
+border:5px solid #f4a261;
+transform:scale(1.1); 
+}
+button:hover{
+background-color:#333;
+cursor:pointer;
+}
+.b{
+background-color:#800000;
+padding:25px 20px;
+height:335px;
+width:265px;
+}
+button{
+background-color:grey;
+border:none;
+padding:10px;
+color:white;
+border-radius:5px;
+}
+.fi{
+font-style:italic;
+color:#f4a261;
+}
+hr{
+margin-top:20px;
+border:2px double white;
+width:238px;
+}
+#m { 
+background-color:#333;
+            color: white;
+			font-size:16px;
+			padding-bottom:20px;
+			padding-top:3px; 
+            text-align: center;
+			height:30px;   
+        }
+		#pa{
+		font-style:italic;
+        color:#f4a261;	
+		}
+		#im{
+		border-radius:15px;
+		}
+		#h {
+            background-color:#800000;
+            color: white;
+            padding:10px;
+            text-align: center;
+			font-size:25px;
+			font-weight:bold;
+			height:340px;
+			}
+h2{
+            font-size: 32px;
+            color: 	#AA336A;
+			font-weight:bold;
+			padding:5px;
+            text-align: center;
+			}
+			  #m {
+            background-color:#333;
+            color: white;
+			font-size:16px;
+			padding-bottom:20px;
+			padding-top:3px; 
+            text-align: center;
+			height:30px; 
+			}
+			table{
+			text-align:center;
+font-size:20px;
+}
+caption{
+font-size:30px;
+font-style:italic;
+font-weight:bold;
+color:#f4a261;
+}
+</style>
+</head>
+<body onload="welCome()">
+<div id="h"><img id="im"src="log.jpeg" width="300" height="180"><h1>Artisan Bakehouse</h1><p id="pa">"Let us cook"</p></div>
+<h2>Experience the freshly baked delights, made with love and dedication.</h2>
+<div id="a">
+<table cellspacing="20">
+<caption>Cakes</caption>
+<tr><td>
+<div class="b"><div>
+<img id="i1" src="aq.jpg" height="220" width="240">
+</div><hr id="h1" />
+<div class="fi">
+Chocolate Cake<br>
+Price: Rs. 1500<br></div>
+<button id="b1" onclick="buyProduct1()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img id="i2" src="pine.jpeg" height="220" width="240">
+</div><hr id="h2" />
+<div class="fi">
+Pineapple Cake<br>
+Price: Rs. 1700<br></div>
+<button id="b2" onclick="buyProduct2()">Buy Now</button>
+</div></td>
+<td><div class="b"><div>
+<img src="stb.jpeg" id="i3" height="220" width="240">
+</div><hr id="h3" />
+<div class="fi">
+Strawberry Cake<br>
+Price: Rs. 1600<br></div>
+<button id="b3" onclick="buyProduct3()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="rv.jpeg" id="i4" height="220" width="240">
+</div><hr id="h4" />
+<div class="fi">
+Red Velvet Cake<br>
+Price: Rs. 2000<br></div>
+<button id="b4" onclick="buyProduct4()">Buy Now</button>
+</div></td></tr></table>
+<table cellspacing="20"><caption>Cupcakes</caption><tr><td><div class="b"><div>
+<img src="vanicup.jpg" id="i5" height="220" width="240">
+</div><hr id="h5" />
+<div class="fi">
+Vanilla Cupcake<br>
+Price: Rs. 200<br></div>
+<button id="b5" onclick="buyProduct5()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="chococup.webp" id="i6" height="220" width="240">
+</div><hr id="h6" />
+<div class="fi">
+Chocolate Cupcake<br>
+Price: Rs. 250<br></div>
+<button id="b6" onclick="buyProduct6()">Buy Now</button>
+</div></td>
+<td><div class="b"><div>
+<img src="lemcup.jpeg" id="i7" height="220" width="240">
+</div><hr id="h7" />
+<div class="fi">
+Lemon Cupcake<br>
+Price: Rs. 220<br></div>
+<button id="b7" onclick="buyProduct7()">Buy Now</button>
+</div></td>
+<td><div class="b"><div>
+<img src="rvc.jpeg" id="i5" height="220" width="240">
+</div><hr id="h5" />
+<div class="fi">
+Red Velvet Cupcake<br>
+Price: Rs. 280<br></div>
+<button id="b5" onclick="buyProduct13()">Buy Now</button>
+</div></td></tr></table>
+<table cellspacing="20"><caption>Donuts</caption><tr><td><div class="b">
+<div>
+<img src="chocodo.webp" id="i8" height="220" width="240">
+</div><hr id="h8" />
+<div class="fi">
+Chocolate Donut<br>
+Price: Rs. 170<br></div>
+<button id="b8" onclick="buyProduct8()">Buy Now</button>
+</div></td>
+<td><div class="b"><div>
+<img src="carado.jpeg" id="i9" height="220" width="240">
+</div><hr id="h9" />
+<div class="fi">
+Caramel Donut<br>
+Price: Rs. 200<br></div>
+<button id="b9" onclick="buyProduct9()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="vanido.webp" id="i10" height="220" width="240">
+</div><hr id="h10" />
+<div class="fi">
+Vanilla Donut<br>
+Price: Rs. 150<br></div>
+<button id="b10" onclick="buyProduct10()">Buy Now</button>
+</div></td>
+<td><div class="b"><div>
+<img src="std.jpg" id="i9" height="220" width="240">
+</div><hr id="h9" />
+<div class="fi">
+Strawberry Donut<br>
+Price: Rs. 180<br></div>
+<button id="b9" onclick="buyProduct14()">Buy Now</button>
+</div></td></tr></table>
+<table cellspacing="20"><caption>Cookies</caption><tr><td><div class="b"><div>
+<img src="chococooki.jpeg" id="i11" height="220" width="240">
+</div><hr id="h11" />
+<div class="fi">
+Chocolate Cookie<br>
+Price: Rs. 30<br></div>
+<button id="b11" onclick="buyProduct11()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="strawcook.jpeg" id="i12" height="220" width="240">
+</div><hr id="h12" />
+<div class="fi">
+Strawberry Cookie<br>
+Price: Rs. 20<br></div>
+<button id="b12" onclick="buyProduct12()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="peac.jpeg" id="i12" height="220" width="240">
+</div><hr id="h12" />
+<div class="fi">
+Peanut Cookie<br>
+Price: Rs. 25<br></div>
+<button id="b12" onclick="buyProduct15()">Buy Now</button>
+</div></td>
+<td><div class="b">
+<div>
+<img src="gingc.jpg" id="i12" height="220" width="240">
+</div><hr id="h12" />
+<div class="fi">
+Ginger Cookie<br>
+Price: Rs. 30<br></div>
+<button id="b12" onclick="buyProduct16()">Buy Now</button>
+</div></td></tr></table>
+</div>
+<div id="m"><p id="p2">&copy; 2025 Artisan Bakehouse. All Rights Reserved.</p>
+<script>
+function welCome(){
+alert('Welcome to "Gallery/Products" page of ARTISAN BAKEHOUSE.');
+}
+function buyProduct1(){
+let price=1500;
+let product="Chocolate Cake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct2(){
+let price=1700;
+let product="Pineapple Cake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct3(){
+let price=1600;
+let product="Strawberry Cake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct4(){
+let price=2000;
+let product="Red Velvet Cake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct5(){
+let price=200;
+let product="Vanilla Cupcake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct6(){
+let price=250;
+let product="Chocolate Cupcake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct7(){
+let price=220;
+let product="Lemon Cupcake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct8(){
+let price=170;
+let product="Chocolate Donut";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct9(){
+let price=200;
+let product="Caramel Donut";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct10(){
+let price=150;
+let product="Vanilla Donut";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct11(){
+let price=30;
+let product="Chocolate Cookie";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address (artisanbakers12@gmail.com).');
+}
+function buyProduct12(){
+let price=20;
+let product="Strawberry Cookie";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address(artisanbakers12@gmail.com).');
+}
+function buyProduct13(){
+let price=280;
+let product="Red Velvet Cupcake";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address(artisanbakers12@gmail.com).');
+}
+function buyProduct14(){
+let price=180;
+let product="Strawberry Donut";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address(artisanbakers12@gmail.com).');
+}
+function buyProduct15(){
+let price=25;
+let product="Peanut Cookie";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address(artisanbakers12@gmail.com).');
+}
+function buyProduct16(){
+let price=30;
+let product="Ginger Cookie";
+alert('The product you chosen is '+product+' and the cost of this product is Rs. '+price+'. For buying it, please contact us on our phone numbers (+92 322-6354064) (+92 346-2130489) or email us on our email address(artisanbakers12@gmail.com).');
+}
+</script>
+</body>
+</html>
